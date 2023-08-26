@@ -27,3 +27,11 @@ pip install -r requirements.txt
 python3 main.py
 </pre>
 
+## Project Structure
+
+- `data`: Contains the CSV file (`body_language_data.csv`) where body pose coordinates for training are stored.
+- `model`: Houses the trained machine learning model in the form of a pickle file (`body_language_model.pkl`).
+- `bodylanguage_decoder.ipynb`: A Jupyter Notebook providing detailed data preprocessing, model training, and evaluation steps.
+- `main.py`: The main Python script for real-time body language prediction using the trained model.
+- `README.md`: The documentation you're currently reading.
+- `requirements.txt`: A file listing the required libraries for easy installation.
