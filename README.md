@@ -1,5 +1,23 @@
 # Body-Language-Decoder
 
+This is a project which predicts your body language in real time and outputs one of three classes the model was trained on : `Happy`
+`Sad`
+`Victorius`
+
+## How was the project built?  (A high level overview)
+* As the project predicts the body language from one of the three classes. Coordinates of body postures were collected in real-time using OpenCV library, with the help of mediapipe library.
+
+* The body landmarks were collected in a csv format. 
+
+* Now it was time for some training. The machine learning library used here was scikit-learn. 
+
+* Created a pipeline  where the data was trained on `LogisticRegression`,`RidgeClassifier`,`RandomForestClassifier`,`GradientBoostingClassifier`
+
+* Each model was evaluated and the best model was picked.
+
+* At the model predicted the body language in real-time.
+
+
 ## Usage Example
 
 ## Cloning and Running
